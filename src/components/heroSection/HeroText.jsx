@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import { Typewriter } from "react-simple-typewriter";
 
 const HeroText = () => {
   return (
@@ -23,15 +24,27 @@ const HeroText = () => {
         Abdullah <br className="sm:hidden md:block" />
         
       </motion.h1>
-      <motion.p
+      <motion.div
         variants={fadeIn("up", 0.6)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-lg mt-4"
+        className="text-xl md:text-2xl mt-4 text-cyan"
       >
-        A Passionate Web Developer
-      </motion.p>
+        <Typewriter
+          words={[
+            "A Software Web Developer",
+            "A Full Stack Developer",
+            "A Passionate Web Developer",
+          ]}
+          loop={true}
+          cursor
+          cursorStyle="_"
+          typeSpeed={70}
+          deleteSpeed={50}
+          delaySpeed={1000}
+        />
+      </motion.div>
     </div>
   );
 };
