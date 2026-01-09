@@ -5,7 +5,7 @@ const AboutMeText = () => {
     <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
       <h2 className="text-6xl text-cyan mb-10">About Me</h2>
       <p>
-        I’m Abdullah a web developer and tech enthusiast with hands-on
+        I’m Abdullah, a web developer and tech enthusiast with hands-on
         experience in building modern, responsive web applications. I specialize
         in front-end development with React, HTML, CSS, and JavaScript, and I’m
         also familiar with back-end technologies like Node.js and MongoDB. With
