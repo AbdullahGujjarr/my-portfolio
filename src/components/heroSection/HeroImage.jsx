@@ -21,7 +21,7 @@ const HeroImage = () => {
               {/* Image on top */}
               <div className="relative z-20 w-[90%] h-[90%] rounded-full overflow-hidden border-4 border-orange shadow-lg aspect-square flex items-center justify-center ring-2 ring-orange">
                 <img
-                  src="../../public/images/3.jpg"
+                  src="/images/3.jpg"
                   alt="Abdelrahman Qassem"
                   className="w-full h-full object-cover rounded-full"
                 />
