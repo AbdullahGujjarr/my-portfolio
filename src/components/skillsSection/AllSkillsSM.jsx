@@ -17,7 +17,7 @@ const skills = [
 
 const AllSkillsSM = () => {
   return (
-    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 my-12">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 sm:gap-6 md:gap-8 my-10 md:my-12">
       {skills.map((item, index) => (
         <motion.div
           key={index}

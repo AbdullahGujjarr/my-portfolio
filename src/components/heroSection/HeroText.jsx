@@ -5,19 +5,19 @@ import { Link } from "react-scroll";
 
 const HeroText = () => {
   return (
-    <div className="flex flex-col gap-5 h-full justify-center md:text-left sm:text-center">
+    <div className="flex flex-col gap-4 h-full justify-center text-center md:text-left w-full max-w-[500px]">
       <motion.div
         variants={fadeIn("down", 0.1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="flex items-center gap-3 md:justify-start sm:justify-center"
+        className="flex items-center gap-3 justify-center md:justify-start"
       >
-        <span className="h-[1px] w-10 bg-cyan shadow-[0_0_8px_#15d1e9]" />
-        <span className="text-sm uppercase tracking-[0.3em] text-cyan text-glow-cyan">
+        <span className="h-[1px] w-8 bg-cyan shadow-[0_0_8px_#15d1e9]" />
+        <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-cyan text-glow-cyan">
           Portfolio 2025
         </span>
-        <span className="h-[1px] w-10 bg-cyan shadow-[0_0_8px_#15d1e9]" />
+        <span className="h-[1px] w-8 bg-cyan shadow-[0_0_8px_#15d1e9]" />
       </motion.div>
 
       <motion.h2
@@ -25,7 +25,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="lg:text-2xl sm:text-xl uppercase text-lightGrey tracking-widest"
+        className="text-sm sm:text-base lg:text-xl uppercase text-lightGrey tracking-widest"
       >
         Full Stack Developer
       </motion.h2>
@@ -35,7 +35,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:text-[3.2rem] lg:text-7xl sm:text-4xl font-bold uppercase leading-none"
+        className="text-4xl sm:text-5xl md:text-[3.2rem] lg:text-7xl font-bold uppercase leading-none"
       >
         <span className="text-orange text-glow-orange">Abdullah</span>
       </motion.h1>
@@ -45,7 +45,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-xl md:text-2xl mt-2 text-cyan min-h-[2rem]"
+        className="text-base sm:text-lg md:text-xl text-cyan min-h-[1.8rem]"
       >
         <Typewriter
           words={[
@@ -68,7 +68,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-lightGrey text-base max-w-[400px] leading-relaxed md:text-left sm:text-center"
+        className="text-lightGrey text-sm sm:text-base leading-relaxed mx-auto md:mx-0 max-w-[340px] md:max-w-none"
       >
         Building modern, performant web experiences with clean code and a passion for great UX.
       </motion.p>
@@ -78,7 +78,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="flex gap-4 mt-2 md:justify-start sm:justify-center flex-wrap"
+        className="flex gap-3 mt-1 justify-center md:justify-start flex-wrap"
       >
         <Link
           spy={true}
@@ -86,7 +86,8 @@ const HeroText = () => {
           duration={600}
           offset={-120}
           to="projects"
-          className="cursor-pointer px-6 py-3 rounded-full bg-orange text-darkBrown font-bold text-sm uppercase tracking-widest hover:bg-lightOrange transition-all duration-300 shadow-neonOrange hover:shadow-[0_0_20px_rgba(251,151,24,0.6)]"
+          className="cursor-pointer px-5 py-2.5 rounded-full bg-orange text-darkBrown font-bold text-xs sm:text-sm uppercase tracking-widest hover:bg-lightOrange transition-all duration-300"
+          style={{ boxShadow: "0 0 16px rgba(251,151,24,0.4)" }}
         >
           View Work
         </Link>
@@ -96,7 +97,8 @@ const HeroText = () => {
           duration={600}
           offset={-120}
           to="contact"
-          className="cursor-pointer px-6 py-3 rounded-full border border-cyan text-cyan font-bold text-sm uppercase tracking-widest hover:bg-cyan hover:text-darkBrown transition-all duration-300 neon-border-cyan"
+          className="cursor-pointer px-5 py-2.5 rounded-full border border-cyan text-cyan font-bold text-xs sm:text-sm uppercase tracking-widest hover:bg-cyan hover:text-darkBrown transition-all duration-300"
+          style={{ boxShadow: "0 0 10px rgba(21,209,233,0.2)" }}
         >
           Hire Me
         </Link>
